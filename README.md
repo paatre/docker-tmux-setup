@@ -1,10 +1,10 @@
-# Docker Tmux Setup - Go Version (dts-go)
+# Docker Tmux Setup
 
-This program (`dts-go`) is a Go implementation of the original `docker-tmux-setup.sh` script. It automates the setup of a local Docker-based development environment within a tmux session. The tool splits the tmux window into multiple panes, each configured for a specific development task, such as running services, frontend builds, and code editing.
+This program (`dts`) is a Go implementation of the original `docker-tmux-setup.sh` script. It automates the setup of a local Docker-based development environment within a tmux session. The tool splits the tmux window into multiple panes, each configured for a specific development task, such as running services, frontend builds, and code editing.
 
 ## Requirements
 
-To build and run `dts-go`, you will need:
+To build and run `dts`, you will need:
 - Go (version 1.18 or later recommended)
 - Docker
 - Docker Compose
@@ -12,7 +12,7 @@ To build and run `dts-go`, you will need:
 
 ## Build Instructions
 
-To build the `dts-go` executable:
+To build the `dts` executable:
 1. Run the Go build command (ensure you are in the project root directory):
    ```bash
    go build -o dts .
@@ -21,7 +21,7 @@ To build the `dts-go` executable:
 
 ## Usage Instructions
 
-To use `dts-go`, run the compiled binary from within an active tmux session:
+To use `dts`, run the compiled binary from within an active tmux session:
 
 ```bash
 ./dts [OPTIONS]

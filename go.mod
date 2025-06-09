@@ -1,4 +1,4 @@
-module dts-go
+module github.com/paatre/docker-tmux-setup
 
 go 1.22.2
 
