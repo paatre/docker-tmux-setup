@@ -1,6 +1,6 @@
 # Docker Tmux Setup
 
-This program (`dts`) is a Go implementation of the original `docker-tmux-setup.sh` script. It automates the setup of a local Docker-based development environment within a tmux session. The tool splits the tmux window into multiple panes, each configured for a specific development task, such as running services, frontend builds, and code editing.
+This program (`dts`) automates the setup of a local Docker-based development environment within a tmux session. It splits the tmux window into multiple panes, each configured for a specific development task, such as running services, frontend builds, and code editing.
 
 ## Requirements
 
