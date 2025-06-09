@@ -13,27 +13,23 @@ To build and run `dts-go`, you will need:
 ## Build Instructions
 
 To build the `dts-go` executable:
-1. Navigate to the project directory:
+1. Run the Go build command (ensure you are in the project root directory):
    ```bash
-   cd dts-go
+   go build -o dts .
    ```
-2. Run the Go build command:
-   ```bash
-   go build -o dts-go_binary .
-   ```
-   This will create an executable file named `dts-go_binary` in the current directory.
+   This will create an executable file named `dts` in the current directory.
 
 ## Usage Instructions
 
 To use `dts-go`, run the compiled binary from within an active tmux session:
 
 ```bash
-./dts-go_binary [OPTIONS]
+./dts [OPTIONS]
 ```
 
 **Important:**
 - You **must** be inside an existing tmux session to run this program.
-- A `docker-compose.yml` file is expected to be present in the directory where you execute `dts-go_binary`.
+- A `docker-compose.yml` file is expected to be present in the directory where you execute `dts`.
 
 ### Options:
 
@@ -50,11 +46,11 @@ The following command-line options are available:
 
 ```bash
 # Use default settings (service "runserver", no Vite, editor from $EDITOR)
-./dts-go_binary
+./dts
 
 # Specify a service and include the Vite pane
-./dts-go_binary --service myservice --vite
+./dts --service myservice --vite
 
 # Use a specific editor and rebuild Docker images
-./dts-go_binary --editor nvim --build
+./dts --editor nvim --build
 ```
